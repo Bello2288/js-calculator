@@ -2,10 +2,11 @@ body {
     background-color: #ab9e9e;
     text-align: center;
     align-content: center;
+    margin-top: 60px;
 }
 
 
-.box1 { grid-area: vp; color: #3f3c3c; }   
+.viewport { grid-area: vp; padding-top: 25px; color: #3f3c3c; }   
 .box2 { grid-area: del; background-color: #e46f0f; }   
 .box3 { grid-area: percentage; background-color: #4a4545; }   
 .box4 { grid-area: plus; background-color: #4a4545; }   
@@ -29,22 +30,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
+    /* height: auto; */
     box-shadow: 1px 1px 1px #3f3c3c;
 }
-
 
 .calculator-container {
     display: grid;
     grid-template-areas: 'myB myB myB' 'myArea myArea myArea';
-
     width: 250px;
     height: 450px;
     background-color: rgb(111, 184, 227);
     margin: auto;
     border-radius: 5%;
     box-shadow: 7px 7px 7px #3f3c3c;
-
     grid-template-areas:
     'vp vp vp vp'
     'del del percentage plus'
@@ -59,12 +57,17 @@ body {
 .calculator-container > div {
     color: #e8dfdf;
     background-color: rgba(25, 24, 24, 0.8);
-    padding: 0px;
-    font-size: 20px;
+    padding: 0px 10px;
+    font-size: 50px;
     border: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    box-shadow: 1px 1px 1px #3f3c3c;
 }
 .calculator-container > button {
     color: #e8dfdf;
     padding: 0px;
-    font-size: 20px;
+    font-size: 30px;
 }
