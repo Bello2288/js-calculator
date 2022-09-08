@@ -1,0 +1,125 @@
+body {
+    background-color: #ab9e9e;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+.box1 { grid-area: vp; }   
+.box2 { grid-area: del; }   
+.box3 { grid-area: percentage; }   
+.box4 { grid-area: plus; }   
+/* .box5 { grid-area: seven; }    */
+/* .box6 { grid-area: eight; }   
+.box7 { grid-area: nine; } 
+.box8 { grid-area: minus; }   
+.box9 { grid-area: four; }  
+.box10 { grid-area: five; }   
+.box11 { grid-area: six; }   
+.box12 { grid-area: times; }   
+.box13 { grid-area: one; }   
+.box14 { grid-area: two; }   
+.box15 { grid-area: three; }   
+.box16 { grid-area: divide; }   
+.box17 { grid-area: zero; }   
+.box18 { grid-area: point; }   
+.box19 { grid-area: equals; }    */
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    box-shadow: 1px 1px 1px #3f3c3c;
+}
+
+
+.calculator-container {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(111, 184, 227);
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 7px 7px 7px #3f3c3c;
+
+    display: grid;
+    grid-template-areas:
+    'vp vp vp vp vp vp'
+    'del del del del percentage plus'
+    'footer footer footer footer footer footer';
+    gap: 8px;
+    padding: 25px 20px;
+}
+
+.calculator-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px;
+    font-size: 20px;
+    border: 0;
+}
+.calculator-container > button {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px;
+    font-size: 20px;
+}
+
+
+
+/* #vp {
+    grid-column: 1 / 8;
+}  
+#del {
+    grid-column: 1 / 4;
+}   
+#percentage {
+    grid-column: 1 / 2;
+}
+#plus {
+    grid-column: 1 / 2;
+} 
+#seven {
+    grid-column: 1 / 2;
+}
+#eight {
+    grid-column: 1 / 2;
+}
+#nine {
+    grid-column: 1 / 2;
+}
+#minus {
+    grid-column: 1 / 2;
+}
+#four {
+    grid-column: 1 / 2;
+}
+#five {
+    grid-column: 1 / 2;
+}
+#six {
+    grid-column: 1 / 2;
+}
+#times {
+    grid-column: 1 / 2;
+}
+#one {
+    grid-column: 1 / 2;
+}
+#two {
+    grid-column: 1 / 2;
+}
+#three {
+    grid-column: 1 / 2;
+}
+#divide {
+    grid-column: 1 / 2;
+}
+#zero {
+    grid-column: 1 / 2;
+}
+#point {
+    grid-column: 1 / 2;
+}
+#equals {
+    grid-column: 1 / 2;
+} */
