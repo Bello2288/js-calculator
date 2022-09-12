@@ -2,34 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator App</title>
     <link rel="stylesheet" href="css/normilize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Calculator App</h1>
+    <!-- <h1>Calculator App</h1> -->
     <div class="calculator-container">
-        <div class="viewport">0</div>
-        <button class="box box2">Del</button>
-        <button class="box box3">%</button>  
-        <button class="box box4">+</button>
-        <button class="box box5">7</button>
-        <button class="box box6">8</button>
-        <button class="box box7">9</button>
-        <button class="box box8">-</button>  
-        <button class="box box9">4</button>
-        <button class="box box10">5</button>
-        <button class="box box11">6</button>
-        <button class="box box12">*</button>
-        <button class="box box13">1</button>  
-        <button class="box box14">2</button>
-        <button class="box box15">3</button>
-        <button class="box box16">/</button>
-        <button class="box box17">0</button>
-        <button class="box box18">.</button>  
-        <button class="box box19">=</button>
+        <div class="viewport">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="AC-button span-two">AC</button>
+        <button data-delete class="light-button">Del</button>  
+        <button data-operation class="light-button">+</button>
+        <button data-number class="dark-button">7</button>
+        <button data-number class="dark-button">8</button>
+        <button data-number class="dark-button">9</button>
+        <button data-operation class="light-button">-</button>  
+        <button data-number class="dark-button">4</button>
+        <button data-number class="dark-button">5</button>
+        <button data-number class="dark-button">6</button>
+        <button data-operation class="light-button">*</button>
+        <button data-number class="dark-button">1</button>  
+        <button data-number class="dark-button">2</button>
+        <button data-number class="dark-button">3</button>
+        <button data-operation class="light-button">/</button>
+        <button data-number class="dark-button">0</button>
+        <button data-number class="dark-button">.</button>  
+        <button data-equals class="equals-button span-two">=</button>
     </div>
     
 
